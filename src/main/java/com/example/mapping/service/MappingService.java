@@ -1,5 +1,6 @@
-package com.example.mapping.controller;
+package com.example.mapping.service;
 
+import com.example.mapping.util.MappingUtils;
 import com.example.mapping.model.MappingResult;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;

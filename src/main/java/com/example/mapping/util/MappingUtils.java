@@ -1,4 +1,4 @@
-package com.example.mapping.controller;
+package com.example.mapping.util;
 
 import org.springframework.web.multipart.MultipartFile;
 
@@ -22,7 +22,7 @@ public class MappingUtils {
         return lines;
     }
 
-    static void parseMappings(List<String> mappingLines, Map<String, String> mappingIdToTarget, Map<String, String> mappingIdToSource, List<String> mappingIds) {
+    public static void parseMappings(List<String> mappingLines, Map<String, String> mappingIdToTarget, Map<String, String> mappingIdToSource, List<String> mappingIds) {
         String currentMappingId = null;
         String currentTarget = null;
         String currentSource = null;
@@ -49,7 +49,7 @@ public class MappingUtils {
         }
     }
 
-    static List<String> processThresholdLines(List<String> thresholdLines, Map<String, String> mappingIdToTarget, Map<String, String> mappingIdToSource, List<String> mappingIds, double threshold, List<String> newMappings) {
+    public static List<String> processThresholdLines(List<String> thresholdLines, Map<String, String> mappingIdToTarget, Map<String, String> mappingIdToSource, List<String> mappingIds, double threshold, List<String> newMappings) {
         for (String line : thresholdLines) {
             String[] parts = line.split("\t");
             if (parts.length >= 3) {
@@ -99,7 +99,7 @@ public class MappingUtils {
         return matcher.find();
     }
 
-    static List<String> insertNewMappings(List<String> existingMappings, List<String> newMappings) {
+    public static List<String> insertNewMappings(List<String> existingMappings, List<String> newMappings) {
         int index = existingMappings.lastIndexOf("]]");
         if (index != -1) {
             List<String> result = new ArrayList<>(existingMappings.subList(0, index));
