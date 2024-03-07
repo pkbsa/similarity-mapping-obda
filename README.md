@@ -7,7 +7,9 @@
 
 ## Overview
 
-The Mapping Service is a Java-based web application that allows users to add new mappings to an existing mapping file based on a similarity file and a user-defined threshold value. This service is built using Java, Thymeleaf, and Gradle.
+The Mapping Service serves as an extension for Ontop VKG, designed to enhance the functionality of mapping `.obda` files. By leveraging a similarity file generated from the "Sim-Preference-ELH" service available at https://github.com/realearn-jaist/sim-preference-elh , users can seamlessly integrate similarity degrees derived from their ontology files. 
+
+This web application facilitates the process of extending mapping files by providing a user-friendly interface for uploading both existing mapping files and similarity files. Through customizable threshold settings, users can precisely control which new mappings are incorporated into their existing mappings. This integration with the Sim-Preference-ELH service streamlines the mapping extension process, enabling users to efficiently enrich their mapping files based on semantic similarity criteria derived from their ontology data.
 
 ## Table of Contents
 
