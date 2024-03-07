@@ -43,7 +43,9 @@ Before you begin, ensure you have met the following requirements:
 #### Install Gradle 
 
 - On Mac OS X
+
   - `brew install gradle`
+
 - On Windows
   - Download from Gradle site.
 
@@ -104,5 +106,4 @@ We would like to thank the open-source community for their contributions and sup
 
 These resources have been instrumental in the development and enhancement of the Mapping Service.
 
-## Reference
 
