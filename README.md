@@ -91,6 +91,39 @@ Before you begin, ensure you have met the following requirements:
 
 6. Click the "Download Mapping" link to download the updated mapping.
 
+### Playground 
+
+1. **Build and Run the Web Application**:
+- Execute the command `gradle bootRun` in your project directory.
+- Navigate to http://localhost:8080 in your web browser.
+![Build and Run](img/1-playground.png)
+
+2. **Load Ontology File (test_mapping.obda)**:
+- Click on the "Load Mapping File (.obda)" button and select the test_mapping.obda file from the test/resources directory.
+- Preview the mapping file in the left textarea box.
+![Load Ontology](img/2-playground.png)
+
+3. **Upload Similarity Degree File (test_similarity)**:
+- Click on the "Load Similarity File" button and select the test_similarity file from the test/resources directory.
+![Load Ontology](img/3-playground.png)
+
+
+4. **Set Threshold Value**:
+- Enter threshold value "0.7" in the designated input field.
+![Load Ontology](img/4-playground.png)
+
+
+5. **Perform Mapping**:
+- Click on the "Perform Mapping" button to initiate the mapping process.
+- View the new mappings generated based on the similarity degree and threshold value in the right textarea box.
+![Load Ontology](img/5-playground.png)
+
+
+6. **Download New Mapping File**:
+- Download the updated mapping file containing the new mappings by clicking on the "Download Mapping" text located at the middle-bottom of the page.
+![Load Ontology](img/6-playground.png)
+
+
 ## Contributing
 
 Contributions are welcome!
